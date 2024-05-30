@@ -1,0 +1,317 @@
+/* body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+} */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+     overflow: hidden;  
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: #001752bb;
+}
+/* .container {
+    width: 80%;
+     height: 100%;
+     max-width: 600px; 
+     margin: 0 auto; 
+    padding: 20px;
+    background-color: navy; 
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+} */
+ .container {
+    width: 100%;
+    height: 100vh;
+    background-color: navy;
+    display: flex;
+    justify-content: space-between;
+} 
+/*************left*********/
+.left{
+    width: 70%;
+    height: 100%;
+    /* background-color: antiquewhite;  */
+    display: flex;
+    flex-direction: column;
+    border-right: 2px solid gold;
+    justify-content: center;
+    background: url(back.jpg);
+    border-left: 2px solid gold;
+    border-top: 10px solid black;
+    border-bottom: 2px solid gold;
+    
+} 
+.logo{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; 
+    width: 80%;
+    margin-left: 65px;
+
+}
+    img{
+        width: 220px;
+        border-radius: 100%;
+        padding: 30px;
+        margin-left: 45px;
+    }
+
+
+#question {
+    /* margin-bottom: 20px;
+    width: 70%; */
+    width: 100%;
+    /* background-color: aliceblue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#question h2 {
+    margin-bottom: 13%;
+    font-size: 30px;
+    color: #fff;
+
+    
+}
+
+/* Reward styles */
+#question p {
+    margin-top: 10px;
+    color: white;
+    text-align: center;
+    font-size: 35px;
+    background: purple;
+    border: 4px solid black;
+    width: 80%;
+    height: 80px;
+    margin-right: 120px;
+    border-radius: 20px;
+}
+
+#question p.reward {
+    font-weight: bold;
+    color: #4CAF50; /*Green color for reward  */
+ } 
+ 
+
+
+#answers {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+#answers button {
+    padding: 5px;
+    font-size: 20px;
+    background-color: black;
+    color: #fff;
+    border: 2px solid gold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 80%;
+    height: 60px;
+    margin-left: 40px;
+    border-radius: 20px;
+}
+
+#answers p{
+    color: white;
+    font-size: 20px;
+}
+
+#answers button:hover {
+    background-color: #333;
+    transition: .7s;
+    transform: translate(.6s);
+}
+#lifelines {
+    margin-top: 10px;
+    display: flex;
+    width: 100%;
+    height: 30%;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+/* 
+#lifelines button {
+    margin-right: 20px;
+    padding: 10px; 
+    font-size: 14px;
+    background-color: darkblue;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    animation: pulse 1s infinite alternate;
+    
+} */
+#lifelines button{
+    width: 70px;
+    height: 70px;
+    border-radius: 25px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    display: inline-block;
+    text-decoration: none;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    animation: pulse 1s infinite alternate;
+    margin-bottom: 40px;
+}
+
+#lifelines button:hover {
+    background-color: black;
+    animation: none; /* Disable animation on hover */
+}
+.hr{
+    
+    width: 100%;
+    height: 1px;
+    background-color: gold;
+    margin-bottom: 60px;
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
+#score {
+    text-align: center;
+    
+}
+
+#score h3 {
+    margin: 0;
+    font-size: 25px;
+    color: white;
+}
+/* Reward ladder styles right */
+.right{
+    background: url(back.jpg); 
+    border-top: 1px solid gold;
+    border-bottom: 1px solid gold;
+    border-right: 1px solid gold;
+} 
+#reward {
+    /* margin-top: 20px;  */
+    width: 30%;
+    height: 100%; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    /* background-color: #2196F3; */
+    /* border-top: 10px solid black;
+    border-bottom: 10px solid black; */
+}
+
+#reward h3 {
+    margin-bottom: 10px;
+    color: black;
+}
+
+#reward ul {
+    list-style-type: none;
+    padding: 0; 
+    margin-bottom: 40px;
+}
+
+#reward ul li {
+    margin-bottom: 0px;
+    font-size: 20px;
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+}
+/* Style for active reward item */
+#reward ul .active {
+    color: gold; /* Change the color to red for active items */
+    font-weight: bolder; /* Add bold font weight for active items */
+    
+}
+
+
+#reward ul li.correct-answer {
+    color: green; /* Green color for correct answer */
+    background-color: gold;
+}
+.right{
+    width: 30%;
+    height: 100%; 
+    display: flex;
+     flex-direction: column;
+     align-items: center;
+    
+     
+}
+.bar {
+    display: inline-block;
+    width: 40px;
+    margin-right: 10px;
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .correct {
+    background-color: green; /* Green color for correct answer */
+  }
+  
+
+#chartContainer{
+    width: 100%;
+    height: 100px;
+    background: transparent; 
+}
+.bar {
+    background-color: purple; /* Set the background color of the bars */
+    color: #fff; /* Set the text color of the percentage labels */
+    text-align: center; /* Center-align the percentage labels */
+    padding: 30px; /* Increase padding for better visibility */
+    margin-bottom: 10px; /* Increase margin between the bars */
+    transition: width 1s ease; /* Add transition effect to width changes */
+    border-radius: 5px; /* Add border radius for rounded corners */
+    font-weight: bold; /* Make the percentage labels bold */
+    font-size: 14px; /* Increase font size for better readability */
+}
+
+.bar.correct {
+    background-color: purple; /* Change background color for the correct answer bar */
+}
+
+.chart-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+

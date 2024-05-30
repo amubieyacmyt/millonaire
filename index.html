@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Who Wants to Be a Millionaire</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            
+              
+            <div class="logo">
+                <img src="download.jfif" alt="Logo">
+            </div>
+            <div id="question">
+                <!-- Question will be dynamically inserted here -->
+                <h2>Question:</h2>
+                <div class="hr"></div>
+                <p>What is the capital of France?</p>
+                <div class="hr"></div>
+                <!-- Display the current reward -->
+                <p>Reward: $100</p>
+            </div>
+            
+        <div id="answers">
+            <!-- Answers will be dynamically inserted here -->
+            
+            <button onclick="checkAnswer('Paris')">Paris</button>
+           
+            <button onclick="checkAnswer('London')">London</button>
+            
+            <button onclick="checkAnswer('Rome')">Rome</button>
+            
+            <button onclick="checkAnswer('Berlin')">Berlin</button>
+        </div>
+        
+        
+        <div id="score">
+            <!-- Score will be dynamically updated here -->
+            <h3>Reward: $0</h3>
+        </div>
+        </div>
+        <div class="right">
+            <div id="lifelines">
+                <!-- Lifelines buttons -->
+                <button id="fiftyFifty" onclick="useFiftyFifty()">50:50</button>
+                <button id="askAudience" onclick="askAudience()">Ask the Audience</button>
+                <button id="walkAway" onclick="walkAway()">Walk Away</button>
+            </div>
+            <div id="chartContainer">
+                <!-- Bar chart will be displayed here -->
+              </div>
+            <div class="hr"></div>
+        <div id="reward">
+            <!-- Reward ladder display -->
+            <!-- <h3>Reward Ladder</h3> -->
+            <ul>
+                <li class="reward-item">$100</li>
+                <li class="reward-item">$200</li>
+                <li class="reward-item">$300</li>
+                <li class="reward-item">$500</li>
+                <li class="reward-item active">$1,000</li>
+                <li class="reward-item">$2,000</li>
+                <li class="reward-item">$4,000</li>
+                <li class="reward-item">$8,000</li>
+                <li class="reward-item">$16,000</li>
+                <li class="reward-item active">$32,000</li>
+                <li class="reward-item">$64,000</li>
+                <li class="reward-item">$125,000</li>
+                <li class="reward-item">$250,000</li>
+                <li class="reward-item">$500,000</li>
+                <li class="reward-item active">$1,000,000</li>
+            </ul>
+        </div>
+        
+        </div>
+    </div>
+    
+      <!-- <button onclick="askAudience()">Ask the Audience</button> -->
+
+    <script src="script.js"></script>
+</body>
+</html>
